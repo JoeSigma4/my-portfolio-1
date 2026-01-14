@@ -1,0 +1,132 @@
+.projects {
+  background: linear-gradient(180deg, #050b12 0%, #020509 100%);
+  padding: 0px 30px;
+  margin: 80px 0 0;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  justify-items: center;
+}
+.project-card {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2px;
+  color: white;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, border 0.3s ease;
+  margin: 0;
+  padding: 0;
+}
+
+.show {
+  background: url(../../assets/about.jpg);
+  background-position: center;
+  height: 250px;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+.project-content {
+  display: inline-block;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  padding: 10px 0;
+  line-height: 1.5;
+}
+.project-content h3 {
+  padding: 10px 5px;
+  font-size: 20px;
+}
+.project-content p {
+  font-size: 14px;
+}
+.project-content span {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 8px;
+  background: rgba(58, 133, 239, 0.235);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.project-content span:hover {
+  background: rgba(139, 92, 246, 0.2);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
+}
+@media (max-width: 1000px) {
+  .projects {
+    margin: 20px 0;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .project-card {
+    width: 95%;
+    margin-top: 30px;
+  }
+  .show {
+    width: 100%;
+  }
+  .project-content span {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 750px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .show {
+    height: 350px;
+  }
+  .project-content h3 {
+    padding: 10px 5px;
+    font-size: 22px;
+  }
+  .project-content p {
+    font-size: 14px;
+  }
+  .project-content span {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 575px) {
+  .projects {
+    margin: 50px 0;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .project-card {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .show {
+    width: 100%;
+  }
+  .project-content span {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+}

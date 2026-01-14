@@ -1,0 +1,28 @@
+.title {
+  text-align: center;
+  background: conic-gradient(180deg, #050b12 0%, #020509 100%);
+
+  margin: 70px 0 20px;
+  line-height: 1.5;
+}
+.title h1 {
+  color: #e5e7eb;
+  font-size: 47px;
+  font-weight: 500;
+  background: linear-gradient(210deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.title p {
+  color: #6b7280;
+}
+@media (max-width: 575px) {
+  .title {
+    margin: 1px auto;
+    padding: 0;
+  }
+  .title h1 {
+    font-size: 25px;
+  }
+}

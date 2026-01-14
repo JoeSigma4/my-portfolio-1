@@ -1,0 +1,207 @@
+.contact-section {
+  padding: 120px 3%;
+  background: conic-gradient(180deg, #050b12 0%, #020509 100%);
+  color: wheat;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.contact-info {
+  margin-bottom: 40%;
+  padding: 0;
+}
+.contact-info h3 {
+  font-size: 30px;
+  color: #ebecf1;
+}
+.contact-info p {
+  font-size: 16px;
+  color: #676767;
+  margin-top: 20px;
+}
+.email-card {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  border-radius: 16px;
+  background: rgba(17, 24, 39, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  margin-top: 20px;
+}
+.icon {
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.6);
+  margin: 10px 10px;
+}
+.icon p {
+  font-size: 18px;
+  padding: 20px;
+}
+.text p {
+  margin: 0;
+  padding: 0;
+}
+.contact-form {
+  background: rgba(99, 102, 241, 0.12);
+  border-radius: 24px;
+  padding: 40px;
+  margin-left: 15%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  width: 80%;
+  line-height: 1.6;
+  margin-bottom: 50%;
+}
+input,
+textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 20px;
+  color: #e5e7eb;
+  outline: none;
+  margin-bottom: 20px;
+}
+input:focus,
+textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.3);
+}
+form button {
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  box-shadow: 0 20px 40px rgba(139, 92, 246, 0.45);
+  cursor: pointer;
+}
+.socials {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.socials span {
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: rgba(250, 248, 248, 0.134);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 20px;
+}
+.socials span:hover {
+  background: rgba(139, 92, 246, 0.2);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
+}
+
+p.follow {
+  font-size: 20px;
+  margin-top: 50px;
+}
+@media (max-width: 850px) {
+  .contact-form {
+    background: rgba(99, 102, 241, 0.12);
+    border-radius: 24px;
+    margin: 0;
+    padding: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    width: 100%;
+    line-height: 1.5;
+    margin-top: 50px;
+  }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .contact-info {
+    margin-bottom: 10%;
+    padding: 0;
+  }
+  .contact-info h3 {
+    font-size: 30px;
+    color: #ebecf1;
+  }
+  .contact-info p {
+    font-size: 18px;
+    color: #676767;
+    margin-top: 20px;
+  }
+  .email-card {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    border-radius: 16px;
+    background: rgba(17, 24, 39, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+    margin-top: 20px;
+    padding: 0;
+    height: 100px;
+  }
+  .icon {
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.6);
+    margin: 20px 20px;
+  }
+  .text p {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 650px) {
+  .contact-section {
+    min-height: 120vh;
+    padding: 60px 6%;
+    background: conic-gradient(180deg, #050b12 0%, #020509 100%);
+    color: white;
+
+    margin: 0;
+  }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .contact-info {
+    margin-bottom: 10%;
+    padding: 0;
+  }
+  .contact-form {
+    background: rgba(99, 102, 241, 0.12);
+    border-radius: 24px;
+    margin: 0;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    width: 100%;
+    line-height: 1.5;
+    margin-top: 50px;
+  }
+  .contact-info > p {
+    font-size: 14px;
+  }
+  .socials span {
+    width: 40px;
+    height: 40px;
+  }
+}
