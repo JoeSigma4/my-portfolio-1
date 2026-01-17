@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="hero">
       <div className="hero-text">
         <h1>Hi, I'm Joel</h1>
-        <h2>A Full-Stack Developer</h2>
+        <h2>A Frontend Developer</h2>
         <p>
           I build responsive, modern web applications that connect front-end
           design with back-end functionality. Passionate about creating seamless
